@@ -10,6 +10,7 @@ int main()
 	DWORD LocalPlayer = 0x509B74;
 	int Base; 
 
+	//FindWindow'A' indicates this MultiByte. if you use W instead of A its gonna be unicode. So if you get any linker errors change the set to multibyte!   
 	HWND hwnd = FindWindowA(0, ("AssaultCube"));
 	GetWindowThreadProcessId(hwnd, &processID);
 
